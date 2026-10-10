@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VOLT | Đồ Công Nghệ Cao Cấp & Tối Giản</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)" />
+    <link
+      rel="preconnect"
+      href="[https://fonts.gstatic.com](https://fonts.gstatic.com)"
+      crossorigin
+    />
+    <link
+      href="[https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap](https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,500;0,700;1,400&display=swap)"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header dùng chung -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">V O L T</a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html" class="active">Trang Chủ</a></li>
+            <li><a href="san-pham.html">Tất Cả Sản Phẩm</a></li>
+            <li><a href="san-pham.html?cat=dien-thoai">Điện Thoại</a></li>
+            <li><a href="san-pham.html?cat=laptop">Laptop</a></li>
+            <li><a href="san-pham.html?cat=am-thanh">Âm Thanh</a></li>
+            <li><a href="san-pham.html?cat=phu-kien">Phụ Kiện</a></li>
+            <li><a href="lien-he.html">Liên Hệ</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <form id="header-search-form" class="search-box">
+            <input type="text" id="header-search-input" placeholder="Tìm sản phẩm..." />
+            <button type="submit">🔍</button>
+          </form>
+          <a href="gio-hang.html" class="cart-icon-btn"> 🛒 <span class="cart-badge">0</span> </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <!-- Hero Banner Slider -->
+      <div class="hero-slider-wrapper">
+        <div class="slider-container">
+          <div class="slide-item">
+            <img
+              src="[https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=1200&auto=format&fit=crop](https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=1200&auto=format&fit=crop)"
+              alt="MacBook"
+            />
+            <div class="slide-content">
+              <h2>KỶ NGUYÊN HIỆU NĂNG MỚI</h2>
+              <p>
+                Trải nghiệm sức mạnh đột phá từ dòng MacBook Pro M3 với thiết kế nhôm nguyên khối
+                sang trọng.
+              </p>
+              <a href="san-pham.html?cat=laptop" class="btn btn-primary">KHÁM PHÁ NGAY</a>
+            </div>
+          </div>
+          <div class="slide-item">
+            <img
+              src="[https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1200&auto=format&fit=crop](https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=1200&auto=format&fit=crop)"
+              alt="Audio"
+            />
+            <div class="slide-content">
+              <h2>ÂM THANH CHÂN THỰC</h2>
+              <p>
+                Đắm chìm vào từng nốt nhạc với bộ sưu tập tai nghe chống ồn chủ động cao cấp nhất.
+              </p>
+              <a href="san-pham.html?cat=am-thanh" class="btn btn-primary">XEM BỘ SƯU TẬP</a>
+            </div>
+          </div>
+          <div class="slide-item">
+            <img
+              src="[https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=1200&auto=format&fit=crop](https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=1200&auto=format&fit=crop)"
+              alt="Phone"
+            />
+            <div class="slide-content">
+              <h2>ĐỈNH CAO CÔNG NGHỆ</h2>
+              <p>
+                Sở hữu ngay các dòng điện thoại Flagship hàng đầu thế giới với ưu đãi độc quyền.
+              </p>
+              <a href="san-pham.html?cat=dien-thoai" class="btn btn-primary">MUA NGAY</a>
+            </div>
+          </div>
+        </div>
+        <div class="slider-dots"></div>
+        <div class="slider-controls">
+          <span class="slide-counter">01 / 03</span>
+          <button class="slider-arrow prev-slide">❮</button>
+          <button class="slider-arrow next-slide">❯</button>
+        </div>
+      </div>
+
+      <!-- Editorial Subtitle -->
+      <p class="editorial-subtitle" style="margin-top: 40px">
+        "Tối giản trong thiết kế - Tối đa trong trải nghiệm"
+      </p>
+
+      <!-- Section 1: Sản phẩm mới -->
+      <section class="section">
+        <div class="section-label">BỘ SƯU TẬP 01</div>
+        <h2 class="section-title">Sản Phẩm Mới Nhất</h2>
+        <div id="grid-moi" class="product-grid"></div>
+      </section>
+
+      <!-- Section 2: Sản phẩm Hot -->
+      <section class="section">
+        <div class="section-label">BỘ SƯU TẬP 02</div>
+        <h2 class="section-title">Sản Phẩm Nổi Bật</h2>
+        <div id="grid-hot" class="product-grid"></div>
+      </section>
+
+      <!-- Section 3: Khuyến mãi -->
+      <section class="section">
+        <div class="section-label">BỘ SƯU TẬP 03</div>
+        <h2 class="section-title">Ưu Đãi Đặc Biệt</h2>
+        <div id="grid-khuyen-mai" class="product-grid"></div>
+      </section>
+    </main>
+
+    <!-- Footer dùng chung -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="color: white">V O L T</a>
+          <p style="margin-top: 12px; color: #aaa; font-size: 0.9rem">
+            Thương hiệu bán lẻ thiết bị công nghệ tối giản và cao cấp hàng đầu Việt Nam.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>DANH MỤC</h4>
+          <ul>
+            <li><a href="san-pham.html?cat=dien-thoai">Điện thoại</a></li>
+            <li><a href="san-pham.html?cat=laptop">Laptop</a></li>
+            <li><a href="san-pham.html?cat=am-thanh">Âm thanh</a></li>
+            <li><a href="san-pham.html?cat=phu-kien">Phụ kiện</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>HỖ TRỢ</h4>
+          <ul>
+            <li><a href="lien-he.html">Liên hệ</a></li>
+            <li>Chính sách bảo hành</li>
+            <li>Vận chuyển & Giao hàng</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>LIÊN HỆ</h4>
+          <p style="color: #aaa; font-size: 0.88rem">
+            Địa chỉ: 123 Đường Công Nghệ, Quận 1, TP. Hồ Chí Minh
+          </p>
+          <p style="color: #aaa; font-size: 0.88rem; margin-top: 6px">Hotline: 1900 1234</p>
+        </div>
+      </div>
+      <div class="copyright">
+        © 2026 VOLT Store. Mọi quyền được bảo lưu. Bài tập môn Lập trình cơ sở với JavaScript.
+      </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi Tiết Sản Phẩm | VOLT</title>
+    <link
+      href="[https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Playfair+Display:wght@500;700&display=swap](https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Playfair+Display:wght@500;700&display=swap)"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">V O L T</a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="san-pham.html">Tất Cả Sản Phẩm</a></li>
+            <li><a href="lien-he.html">Liên Hệ</a></li>
+          </ul>
+        </nav>
+        <div class="header-actions">
+          <a href="gio-hang.html" class="cart-icon-btn">🛒 <span class="cart-badge">0</span></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="container section">
+      <!-- Vùng hiển thị chi tiết sản phẩm dựa vào ?id= -->
+      <div id="product-detail-container"></div>
+
+      <!-- Section sản phẩm liên quan -->
+      <section class="section" style="margin-top: 40px">
+        <div class="section-label">GỢI Ý CHON BẠN</div>
+        <h2 class="section-title">Sản Phẩm Liên Quan</h2>
+        <div id="related-products-grid" class="product-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="copyright">© 2026 VOLT Store. All rights reserved.</div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
